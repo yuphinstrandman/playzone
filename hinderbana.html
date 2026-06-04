@@ -3,64 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hinderbana - Rörelselabbet</title>
+    <title>Hinderbana - PlayZone</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/lekinfo.style.css">
 </head>
 <body>
 
 <nav>
-     <div class="logo">
-    <span class="logo-icon">⚡</span>
-    <span class="logo-text">PlayZone</span>
-</div>
+    <div class="nav-container">
+
+        <div class="logo">
+            <span class="logo-icon">⚡</span>
+            <span class="logo-text">PlayZone</span>
+        </div>
+
+        <label for="menu-toggle" class="menu-btn">☰</label>
+
+    </div>
 
     <input type="checkbox" id="menu-toggle">
-</div>
 
     <div class="nav-links">
 
         <a href="index.html">🏠 Start</a>
-
         <a href="lekar.html">🎲 Lekar</a>
 
-        <div class="dropdown">
+        <details class="dropdown-menu">
+            <summary>📖 Regler ▾</summary>
 
-           
-<details class="dropdown-menu">
-    <summary>📖 Regler ▾</summary>
-                <a href="spokboll.html">Spökboll</a>
-                <a href="kurragomma.html">Kurragömma</a>
-                <a href="capturetheflagg.html">Capture the Flag</a>
-                <a href="dogdeball.html">Dodgeball</a>
-                <a href="stafett.html">Stafett</a>
-                <a href="tagen.html">Tagen</a>
-                <a href="king.html">King</a>
-                <a href="hinderbana.html">Hinderbana</a>
-            </div>
-
-        </div>
+            <a href="spokboll.html">Spökboll</a>
+            <a href="kurragomma.html">Kurragömma</a>
+            <a href="capturetheflag.html">Capture the Flag</a>
+            <a href="dodgeball.html">Dodgeball</a>
+            <a href="stafett.html">Stafett</a>
+            <a href="tagen.html">Tagen</a>
+            <a href="king.html">King</a>
+            <a href="hinderbana.html">Hinderbana</a>
+        </details>
 
     </div>
 </nav>
 
 <section class="hero">
     <div class="hero-card">
+
         <div class="hero-image">
             <img src="images/hinderbana.jpg" alt="Hinderbana">
         </div>
+
         <div class="hero-text">
             <h1>Hinderbana</h1>
             <p>Ta dig igenom hinder så snabbt och smidigt du kan.</p>
         </div>
+
     </div>
 </section>
 
 <section class="content-section">
+
     <div class="content-grid">
+
         <div class="info-card">
             <h2>Spelregler</h2>
+
             <ul>
                 <li>Bygg en bana med hinder, koner, rep eller andra föremål.</li>
                 <li>Bestäm start och mål.</li>
@@ -69,9 +77,14 @@
                 <li>Den som klarar banan snabbast eller bäst vinner.</li>
             </ul>
         </div>
+
     </div>
 
+</section>
+
 <section class="content-section">
+
+    <h2>Bildstöd och information</h2>
 
     <div class="tabs-wrapper">
 
@@ -80,11 +93,11 @@
             <input type="checkbox" id="toggle-rules">
 
             <label for="toggle-rules" class="tab-label">
-                🖼️ Bilder på spelregler
+                🖼️ Spelregler med bildstöd
             </label>
 
             <div class="tab-content">
-                <img src="images/hinderbanabild.jpg" alt="Bildstöd för Spökboll" class="rules-image">
+                <img src="images/hinderbanabild.jpg" alt="Bildstöd för Hinderbana" class="rules-image">
             </div>
 
         </div>
@@ -99,7 +112,8 @@
 
             <div class="tab-content">
                 <p>
-                    Hinderbana tränar balans, motorik, styrka och problemlösning. Den är enkel att anpassa efter plats, ålder och svårighetsgrad.
+                    Hinderbana tränar balans, motorik, styrka och problemlösning.
+                    Den är enkel att anpassa efter plats, ålder och svårighetsgrad.
                 </p>
             </div>
 
@@ -107,17 +121,16 @@
 
     </div>
 
-    </section>
-
-    <div class="back-container">
-        <a href="lekar.html" class="back-btn">← Tillbaka till lekar</a>
-    </div>
 </section>
 
+<div class="back-container">
+    <a href="lekar.html" class="back-btn">← Tillbaka till lekar</a>
+</div>
+
 <footer class="footer">
-    <h3>Rörelselabbet</h3>
+    <h3>PlayZone</h3>
     <p>Roliga lekar och rörelse för barn och unga.</p>
-    <p class="small-text">© 2026 Rörelselabbet. Alla rättigheter reserverade.</p>
+    <p class="small-text">© 2026 PlayZone. Skapad för lek, rörelse och gemenskap.</p>
 </footer>
 
 </body>
