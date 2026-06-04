@@ -309,6 +309,24 @@ nav{
   
 }
 
+.game-btn{
+    display: block;
+    text-align: center;
+    background: #16A34A;
+    color: white;
+    text-decoration: none;
+    padding: 0.85rem 1rem;
+    border-radius: 999px;
+    font-weight: 700;
+    box-shadow: 0 8px 20px rgba(22,163,74,0.3);
+    transition: 0.2s;
+}
+
+.game-btn:hover{
+    background: #076528 ;
+    transform: translateY(-2px);
+}
+
 /* FÖRÄLDRAR */
 
 .parents-section{
