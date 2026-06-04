@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spökboll - Rörelselabbet</title>
+    <title>Spökboll - PlayZone</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,137 +15,143 @@
 
 <body>
 
-    <nav>
-        <div class="logo">
-            <span class="logo-icon">⚡</span>
-            <span class="logo-text">Playzone</span>
-        </div>
+<nav>
+    <a href="index.html" class="logo">
+        <span class="logo-icon">⚡</span>
+        <span class="logo-text">PlayZone</span>
+    </a>
 
-        <input type="checkbox" id="menu-toggle">
+    <input type="checkbox" id="menu-toggle">
 
-        <div class="nav-links">
-            <a href="index.html">🏠 Start</a>
-            <a href="lekar.html">🎲 Lekar</a>
+    <label for="menu-toggle" class="menu-btn">
+        ☰
+    </label>
 
-            <div class="dropdown">
-                <details class="dropdown-menu">
-                    <summary>📖 Regler ▾</summary>
+    <div class="nav-links">
+        <a href="index.html">🏠 Start</a>
+        <a href="lekar.html">🎲 Lekar</a>
 
-                    <a href="spokboll.html">Spökboll</a>
-                    <a href="kurragomma.html">Kurragömma</a>
-                    <a href="capturetheflagg.html">Capture the Flag</a>
-                    <a href="dogdeball.html">Dodgeball</a>
-                    <a href="stafett.html">Stafett</a>
-                    <a href="tagen.html">Tagen</a>
-                    <a href="king.html">King</a>
-                    <a href="hinderbana.html">Hinderbana</a>
-                </details>
+        <details class="dropdown-menu">
+            <summary>📖 Regler</summary>
+            <a href="spokboll.html">Spökboll</a>
+            <a href="kurragomma.html">Kurragömma</a>
+            <a href="capturetheflagg.html">Capture the Flag</a>
+            <a href="dogdeball.html">Dodgeball</a>
+            <a href="stafett.html">Stafett</a>
+            <a href="tagen.html">Tagen</a>
+            <a href="king.html">King</a>
+            <a href="hinderbana.html">Hinderbana</a>
+        </details>
+    </div>
+</nav>
+
+<main>
+
+    <section class="hero">
+        <div class="hero-card">
+
+            <div class="hero-image">
+                <img src="images/spokboll.jpg" alt="Spökboll">
             </div>
+
+            <div class="hero-text">
+                <h1>Spökboll</h1>
+
+                <p>
+                    En snabb och rolig laglek där du måste undvika bollar
+                    och samarbeta med ditt lag.
+                </p>
+            </div>
+
         </div>
-    </nav>
+    </section>
 
-    <main>
+    <section class="content-section">
 
-        <section class="hero">
-            <div class="hero-card">
+        <div class="content-grid">
 
-                <div class="hero-image">
-                    <img src="images/spokboll.jpg" alt="Spökboll">
+            <div class="info-card">
+
+                <h2>Spelregler</h2>
+
+                <ul>
+                    <li>Dela upp spelarna i två lag.</li>
+                    <li>Använd en eller flera mjuka bollar.</li>
+                    <li>Försök träffa motståndarna med bollen.</li>
+                    <li>Blir du träffad åker du ut eller går till sidlinjen.</li>
+                    <li>Sista laget med spelare kvar vinner.</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="content-section">
+
+        <h2>Bildstöd och information</h2>
+
+        <div class="tabs-wrapper">
+
+            <div class="tab-box">
+
+                <input type="checkbox" id="toggle-rules">
+
+                <label for="toggle-rules" class="tab-label">
+                    🖼️ Bilder på spelregler
+                </label>
+
+                <div class="tab-content">
+                    <img src="images/spokbollbild.jpg"
+                         alt="Bildstöd för Spökboll"
+                         class="rules-image">
                 </div>
 
-                <div class="hero-text">
-                    <h1>Spökboll</h1>
+            </div>
+
+            <div class="tab-box">
+
+                <input type="checkbox" id="toggle-info">
+
+                <label for="toggle-info" class="tab-label">
+                    👨‍🏫 För vuxna
+                </label>
+
+                <div class="tab-content">
                     <p>
-                        En snabb och rolig laglek där du måste undvika bollar
-                        och samarbeta med ditt lag.
+                        Spökboll tränar barns samarbetsförmåga,
+                        koordination, reaktionsförmåga och kommunikation.
+                        Leken uppmuntrar fysisk aktivitet samtidigt som
+                        barnen har roligt tillsammans. Den passar bra både
+                        i skolan och på fritiden eftersom den enkelt kan
+                        anpassas efter gruppens storlek.
                     </p>
                 </div>
 
             </div>
-        </section>
-
-        <section class="content-section">
-
-            <div class="content-grid">
-
-                <div class="info-card">
-
-                    <h2>Spelregler</h2>
-
-                    <ul>
-                        <li>Dela upp spelarna i två lag.</li>
-                        <li>Använd en eller flera mjuka bollar.</li>
-                        <li>Försök träffa motståndarna med bollen.</li>
-                        <li>Blir du träffad åker du ut eller går till sidlinjen.</li>
-                        <li>Sista laget med spelare kvar vinner.</li>
-                    </ul>
-
-                </div>
-
-            </div>
-
-        </section>
-
-        <div class="content-section">
-
-            <div class="tabs-wrapper">
-
-                <div class="tab-box">
-
-                    <input type="checkbox" id="toggle-rules">
-
-                    <label for="toggle-rules" class="tab-label">
-                        <span>🖼️ Bilder på spelregler</span>
-                    </label>
-
-                    <div class="tab-content">
-                        <img src="images/spokbollbild.jpg"
-                             alt="Bildstöd för Spökboll"
-                             class="rules-image">
-                    </div>
-
-                </div>
-
-                <div class="tab-box">
-
-                    <input type="checkbox" id="toggle-info">
-
-                    <label for="toggle-info" class="tab-label">
-                        <span>👨‍🏫 För vuxna</span>
-                    </label>
-
-                    <div class="tab-content">
-                        <p>
-                            Spökboll tränar barns samarbetsförmåga,
-                            koordination, reaktionsförmåga och kommunikation.
-                            Leken uppmuntrar fysisk aktivitet samtidigt som
-                            barnen har roligt tillsammans. Den passar bra både
-                            i skolan och på fritiden eftersom den enkelt kan
-                            anpassas efter gruppens storlek.
-                        </p>
-                    </div>
-
-                </div>
-
-            </div>
-
-            <div class="back-container">
-                <a href="lekar.html" class="back-btn">
-                    ← Tillbaka till lekar
-                </a>
-            </div>
 
         </div>
 
-    </main>
+    </section>
 
-    <footer class="footer">
-        <h3>Playzone</h3>
-        <p>Roliga lekar och rörelse för barn och unga.</p>
-        <p class="small-text">
-            © 2026 Playzone. Alla rättigheter reserverade.
-        </p>
-    </footer>
+    <div class="back-container">
+        <a href="lekar.html" class="back-btn">
+            ← Tillbaka till lekar
+        </a>
+    </div>
+
+</main>
+
+<footer class="footer">
+    <h3>PlayZone</h3>
+
+    <p>Roliga lekar och rörelse för barn och unga.</p>
+
+    <p class="small-text">
+        © 2026 PlayZone. Alla rättigheter reserverade.
+    </p>
+</footer>
 
 </body>
 

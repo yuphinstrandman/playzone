@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stafett - Rörelselabbet</title>
+    <title>Stafett - PlayZone</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,116 +15,125 @@
 
 <body>
 
-    <nav>
-        <div class="logo">
-            <span class="logo-icon">⚡</span>
-            <span class="logo-text">Playzone</span>
+<nav>
+    <a href="index.html" class="logo">
+        <span class="logo-icon">⚡</span>
+        <span class="logo-text">PlayZone</span>
+    </a>
+
+    <input type="checkbox" id="menu-toggle">
+
+    <label for="menu-toggle" class="menu-btn">
+        ☰
+    </label>
+
+    <div class="nav-links">
+        <a href="index.html">🏠 Start</a>
+        <a href="lekar.html">🎲 Lekar</a>
+
+        <details class="dropdown-menu">
+            <summary>📖 Regler</summary>
+            <a href="spokboll.html">Spökboll</a>
+            <a href="kurragomma.html">Kurragömma</a>
+            <a href="capturetheflagg.html">Capture the Flag</a>
+            <a href="dogdeball.html">Dodgeball</a>
+            <a href="stafett.html">Stafett</a>
+            <a href="tagen.html">Tagen</a>
+            <a href="king.html">King</a>
+            <a href="hinderbana.html">Hinderbana</a>
+        </details>
+    </div>
+</nav>
+
+<main>
+
+    <section class="hero">
+        <div class="hero-card">
+
+            <div class="hero-image">
+                <img src="images/stafett.jpg" alt="Stafett">
+            </div>
+
+            <div class="hero-text">
+                <h1>Stafett</h1>
+                <p>Spring i lag och växla så snabbt ni kan för att komma först i mål.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="content-grid">
+
+            <div class="info-card">
+                <h2>Spelregler</h2>
+
+                <ul>
+                    <li>Dela upp spelarna i lika stora lag.</li>
+                    <li>Bestäm en startlinje och en vändpunkt.</li>
+                    <li>En spelare i taget springer sträckan.</li>
+                    <li>När spelaren kommer tillbaka växlar nästa spelare.</li>
+                    <li>Laget där alla sprungit klart först vinner.</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="content-section">
+
+        <h2>Bildstöd och information</h2>
+
+        <div class="tabs-wrapper">
+
+            <div class="tab-box">
+                <input type="checkbox" id="toggle-rules">
+
+                <label for="toggle-rules" class="tab-label">
+                    🖼️ Spelregler med bildstöd
+                </label>
+
+                <div class="tab-content">
+                    <img src="images/stafettbild.jpg"
+                         alt="Bildstöd för Stafett"
+                         class="rules-image">
+                </div>
+            </div>
+
+            <div class="tab-box">
+                <input type="checkbox" id="toggle-info">
+
+                <label for="toggle-info" class="tab-label">
+                    👨‍🏫 För vuxna
+                </label>
+
+                <div class="tab-content">
+                    <p>
+                        Stafett tränar kondition, snabbhet, samarbete och ansvar.
+                        Barnen får känna att varje person är viktig för lagets resultat.
+                    </p>
+                </div>
+            </div>
+
         </div>
 
-        <input type="checkbox" id="menu-toggle">
+    </section>
 
-        <div class="nav-links">
-            <a href="index.html">🏠 Start</a>
-            <a href="lekar.html">🎲 Lekar</a>
+    <div class="back-container">
+        <a href="lekar.html" class="back-btn">
+            ← Tillbaka till lekar
+        </a>
+    </div>
 
-            <div class="dropdown">
-                <details class="dropdown-menu">
-                    <summary>📖 Regler ▾</summary>
+</main>
 
-                    <a href="spokboll.html">Spökboll</a>
-                    <a href="kurragomma.html">Kurragömma</a>
-                    <a href="capturetheflagg.html">Capture the Flag</a>
-                    <a href="dogdeball.html">Dodgeball</a>
-                    <a href="stafett.html">Stafett</a>
-                    <a href="tagen.html">Tagen</a>
-                    <a href="king.html">King</a>
-                    <a href="hinderbana.html">Hinderbana</a>
-                </details>
-            </div>
-        </div>
-    </nav>
-
-    <main>
-
-        <section class="hero">
-            <div class="hero-card">
-
-                <div class="hero-image">
-                    <img src="images/stafett.jpg" alt="Stafett">
-                </div>
-
-                <div class="hero-text">
-                    <h1>Stafett</h1>
-                    <p>Spring i lag och växla så snabbt ni kan för att komma först i mål.</p>
-                </div>
-
-            </div>
-        </section>
-
-        <section class="content-section">
-            <div class="content-grid">
-
-                <div class="info-card">
-                    <h2>Spelregler</h2>
-
-                    <ul>
-                        <li>Dela upp spelarna i lika stora lag.</li>
-                        <li>Bestäm en startlinje och en vändpunkt.</li>
-                        <li>En spelare i taget springer sträckan.</li>
-                        <li>När spelaren kommer tillbaka växlar nästa spelare.</li>
-                        <li>Laget där alla sprungit klart först vinner.</li>
-                    </ul>
-                </div>
-
-            </div>
-        </section>
-
-        <div class="content-section">
-            <div class="tabs-wrapper">
-
-                <div class="tab-box">
-                    <input type="checkbox" id="toggle-rules">
-
-                    <label for="toggle-rules" class="tab-label">
-                        <span>🖼️ Spelregler med bildstöd</span>
-                    </label>
-
-                    <div class="tab-content">
-                        <img src="images/stafettbild.jpg"
-                             alt="Bildstöd för Stafett"
-                             class="rules-image">
-                    </div>
-                </div>
-
-                <div class="tab-box">
-                    <input type="checkbox" id="toggle-info">
-
-                    <label for="toggle-info" class="tab-label">
-                        <span>👨‍🏫 vuxna</span>
-                    </label>
-
-                    <div class="tab-content">
-                        <p>
-                            Stafett tränar kondition, snabbhet, samarbete och ansvar.
-                            Barnen får känna att varje person är viktig för lagets resultat.
-                        </p>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="back-container">
-                <a href="lekar.html" class="back-btn">← Tillbaka till lekar</a>
-            </div>
-        </div>
-
-    </main>
-
-    <footer class="footer">
-        <h3>Playzone</h3>
-        <p>Roliga lekar och rörelse för barn och unga.</p>
-        <p class="small-text">© 2026 Playzone. Alla rättigheter reserverade.</p>
-    </footer>
+<footer class="footer">
+    <h3>PlayZone</h3>
+    <p>Roliga lekar och rörelse för barn och unga.</p>
+    <p class="small-text">
+        © 2026 PlayZone. Alla rättigheter reserverade.
+    </p>
+</footer>
 
 </body>
 

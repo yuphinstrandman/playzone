@@ -28,6 +28,11 @@ nav {
     gap: 0.6rem;
     color: white;
     font-weight: 800;
+    text-decoration: none;
+}
+
+.logo:hover {
+    opacity: 0.9;
 }
 
 .logo-icon {
@@ -83,7 +88,6 @@ nav {
     transform: translateY(-2px);
 }
 
-/* Kräver att input#menu-toggle ligger före .nav-links i HTML */
 #menu-toggle:checked ~ .nav-links {
     display: flex;
 }
@@ -122,6 +126,37 @@ nav {
     border-radius: 12px;
     font-weight: 600;
     margin-top: 0.3rem;
+}
+
+/* DESKTOP */
+@media (min-width: 768px) {
+    .menu-btn {
+        display: none;
+    }
+
+    .nav-links {
+        display: flex;
+        width: auto;
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 0;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 767px) {
+    .menu-btn {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    #menu-toggle:checked ~ .nav-links {
+        display: flex;
+    }
 }
 
 /* HERO */

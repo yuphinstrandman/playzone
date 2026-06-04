@@ -8,153 +8,150 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="css/index.style.css">
 </head>
-
 <body>
 
-    <nav>
-        <div class="logo">
-            <span class="logo-icon">⚡</span>
-            <span class="logo-text">PlayZone</span>
+<nav>
+    <a href="index.html" class="logo">
+        <span class="logo-icon">⚡</span>
+        <span class="logo-text">PlayZone</span>
+    </a>
+
+    <input type="checkbox" id="menu-toggle">
+
+    <label for="menu-toggle" class="menu-btn">
+        ☰
+    </label>
+
+    <div class="nav-links">
+        <a href="index.html">🏠 Start</a>
+        <a href="lekar.html">🎲 Lekar</a>
+
+        <details class="dropdown-menu">
+            <summary>📖 Regler</summary>
+            <a href="spokboll.html">Spökboll</a>
+            <a href="kurragomma.html">Kurragömma</a>
+            <a href="capturetheflagg.html">Capture the Flag</a>
+            <a href="dogdeball.html">Dodgeball</a>
+            <a href="stafett.html">Stafett</a>
+            <a href="tagen.html">Tagen</a>
+            <a href="king.html">King</a>
+            <a href="hinderbana.html">Hinderbana</a>
+        </details>
+    </div>
+</nav>
+
+<main>
+    <section class="hero">
+        <div class="hero-split">
+            <div class="hero-image">
+                <img src="images/startsida.jpg" alt="Barn som leker">
+            </div>
+
+            <div class="hero-text">
+                <h1>Hitta en lek. Samla kompisarna. Kör igång!</h1>
+
+                <p>
+                    Upptäck roliga lekar för inomhus och utomhus.
+                    Perfekt för skola, fritid och familj.
+                </p>
+
+                <a href="lekar.html" class="hero-btn">🎲 Hitta lekar</a>
+            </div>
         </div>
+    </section>
 
-        <input type="checkbox" id="menu-toggle">
+    <section class="info-section">
+        <div class="info-box">
+            <h2>Rörelse är viktigt!</h2>
 
-        <div class="nav-links">
-            <a href="index.html">🏠 Start</a>
-            <a href="lekar.html">🎲 Lekar</a>
-
-            <div class="dropdown">
-                <details class="dropdown-menu">
-                    <summary>📖 Regler ▾</summary>
-                    <a href="spokboll.html">Spökboll</a>
-                    <a href="kurragomma.html">Kurragömma</a>
-                    <a href="capturetheflagg.html">Capture the Flag</a>
-                    <a href="dogdeball.html">Dodgeball</a>
-                    <a href="stafett.html">Stafett</a>
-                    <a href="tagen.html">Tagen</a>
-                    <a href="king.html">King</a>
-                    <a href="hinderbana.html">Hinderbana</a>
-                </details>
-            </div>
-        </div>
-    </nav>
-
-    <main>
-
-        <section class="hero">
-            <div class="hero-split">
-
-                <div class="hero-image">
-                    <img src="images/startsida.jpg" alt="Barn som leker">
-                </div>
-
-                <div class="hero-text">
-                    <h1>Hitta en lek. Samla kompisarna. Kör igång!</h1>
-
-                    <p>
-                        Upptäck roliga lekar för inomhus och utomhus.
-                        Perfekt för skola, fritid och familj.
-                    </p>
-
-                    <a href="lekar.html" class="hero-btn">🎲 Hitta lekar</a>
-                </div>
-
-            </div>
-        </section>
-
-        <section class="info-section">
-            <div class="info-box">
-                <h2>Rörelse är viktigt!</h2>
-
-                <p>
-                    Att röra på sig varje dag gör att kroppen mår bättre, blir starkare och får mer energi.
-                    När du leker och är aktiv tillsammans med andra blir du också gladare och får nya kompisar.
-                    Det behöver inte vara träning – lekar och roliga aktiviteter räcker jättebra!
-                </p>
-            </div>
-        </section>
-
-        <section class="cards-section">
-            <h2>Populära lekar</h2>
-
-            <div class="cards-grid">
-
-                <div class="card">
-                    <img src="images/spokboll.jpg" alt="Spökboll">
-                    <div class="card-content">
-                        <h3>Spökboll</h3>
-                        <p>En snabb och rolig lek där du måste undvika bollar och samarbeta i lag.</p>
-                        <a href="spokboll.html" class="game-btn">Läs regler</a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="images/kurragomma.jpg" alt="Kurragömma">
-                    <div class="card-content">
-                        <h3>Kurragömma</h3>
-                        <p>En klassisk lek där någon letar medan alla andra gömmer sig.</p>
-                        <a href="kurragomma.html" class="game-btn">Läs regler</a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="images/capturetheflagg.jpg" alt="Capture the Flag">
-                    <div class="card-content">
-                        <h3>Capture the Flag</h3>
-                        <p>Två lag tävlar om att sno motståndarens flagga utan att bli tagna.</p>
-                        <a href="capturetheflagg.html" class="game-btn">Läs regler</a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="images/dogdeball.jpg" alt="Dodgeball">
-                    <div class="card-content">
-                        <h3>Dodgeball</h3>
-                        <p>Undvik bollarna och försök träffa motståndarna för att vinna.</p>
-                        <a href="dogdeball.html" class="game-btn">Läs regler</a>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <section class="parents-section">
-            <div class="parents-box">
-                <h2>Till vårdnahavare och pedagoger</h2>
-
-                <p>
-                    Barn och unga rör sig idag mindre än tidigare, vilket kan påverka både fysisk och psykisk hälsa.
-                    Genom lek och rörelse stärks barns motorik, koncentration och välmående.
-                </p>
-
-                <p>
-                    Fysiska aktiviteter och lekar bidrar också till social utveckling, samarbete och gemenskap.
-                    Det behöver inte vara organiserad träning – enkla lekar i vardagen räcker långt.
-                </p>
-
-                <p>
-                    Den här webbplatsen är skapad för att göra det enkelt att hitta roliga och tillgängliga aktiviteter
-                    som kan göras både hemma, i skolan och utomhus.
-                </p>
-            </div>
-        </section>
-
-    </main>
-
-    <footer class="footer">
-        <div class="footer-content">
-            <h3>Playzone</h3>
-
-            <p>Roliga lekar och rörelse för barn och unga.</p>
-
-            <p class="small-text">
-                © 2026 Playzone. Alla rättigheter reserverade.
+            <p>
+                Att röra på sig varje dag gör att kroppen mår bättre, blir starkare och får mer energi.
+                När du leker och är aktiv tillsammans med andra blir du också gladare och får nya kompisar.
+                Det behöver inte vara träning – lekar och roliga aktiviteter räcker jättebra!
             </p>
         </div>
-    </footer>
+    </section>
+
+    <section class="cards-section">
+        <h2>Populära lekar</h2>
+
+        <div class="cards-grid">
+            <div class="card">
+                <img src="images/spokboll.jpg" alt="Spökboll">
+
+                <div class="card-content">
+                    <h3>Spökboll</h3>
+                    <p>En snabb och rolig lek där du måste undvika bollar och samarbeta i lag.</p>
+                    <a href="spokboll.html" class="game-btn">Läs regler</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/kurragomma.jpg" alt="Kurragömma">
+
+                <div class="card-content">
+                    <h3>Kurragömma</h3>
+                    <p>En klassisk lek där någon letar medan alla andra gömmer sig.</p>
+                    <a href="kurragomma.html" class="game-btn">Läs regler</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/capturetheflagg.jpg" alt="Capture the Flag">
+
+                <div class="card-content">
+                    <h3>Capture the Flag</h3>
+                    <p>Två lag tävlar om att sno motståndarens flagga utan att bli tagna.</p>
+                    <a href="capturetheflagg.html" class="game-btn">Läs regler</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/dogdeball.jpg" alt="Dodgeball">
+
+                <div class="card-content">
+                    <h3>Dodgeball</h3>
+                    <p>Undvik bollarna och försök träffa motståndarna för att vinna.</p>
+                    <a href="dogdeball.html" class="game-btn">Läs regler</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="parents-section">
+        <div class="parents-box">
+            <div class="parents-content">
+                <div class="parents-text">
+                    <h2>Till vårdnadshavare, lärare och pedagoger</h2>
+
+                    <p>Barn och unga rör sig idag mindre än tidigare, vilket kan påverka både fysisk och psykisk hälsa.</p>
+
+                    <p>Fysiska aktiviteter och lekar bidrar också till social utveckling, samarbete och gemenskap.</p>
+
+                    <p>Den här webbplatsen är skapad för att göra det enkelt att hitta roliga och tillgängliga aktiviteter.</p>
+                </div>
+
+                <img src="images/vuxna.jpg"
+                     alt="Barn som leker och rör sig utomhus"
+                     class="parents-image">
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="footer-content">
+        <h3>PlayZone</h3>
+
+        <p>Roliga lekar och rörelse för barn och unga.</p>
+
+        <p class="small-text">
+            © 2026 PlayZone. Alla rättigheter reserverade.
+        </p>
+    </div>
+</footer>
 
 </body>
 </html>

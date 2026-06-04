@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Capture the Flag - Rörelselabbet</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/lekinfo.style.css">
@@ -11,36 +12,33 @@
 <body>
 
 <nav>
-     <div class="logo">
-    <span class="logo-icon">⚡</span>
-    <span class="logo-text">PlayZone</span>
-        <input type="checkbox" id="menu-toggle">
-</div>
+    <a href="index.html" class="logo">
+        <span class="logo-icon">⚡</span>
+        <span class="logo-text">PlayZone</span>
+    </a>
+
+    <input type="checkbox" id="menu-toggle">
+
+    <label for="menu-toggle" class="menu-btn">
+        ☰
+    </label>
 
     <div class="nav-links">
-
         <a href="index.html">🏠 Start</a>
-
         <a href="lekar.html">🎲 Lekar</a>
 
-        <div class="dropdown">
-            </div>
-
-   <div>        
-<details class="dropdown-menu">
-    <summary>📖 Regler ▾</summary>
-                <a href="spokboll.html">Spökboll</a>
-                <a href="kurragomma.html">Kurragömma</a>
-                <a href="capturetheflagg.html">Capture the Flag</a>
-                <a href="dogdeball.html">Dodgeball</a>
-                <a href="stafett.html">Stafett</a>
-                <a href="tagen.html">Tagen</a>
-                <a href="king.html">King</a>
-                <a href="hinderbana.html">Hinderbana</a>
-</details>
-            </div>
-
-        </div>
+        <details class="dropdown-menu">
+            <summary>📖 Regler</summary>
+            <a href="spokboll.html">Spökboll</a>
+            <a href="kurragomma.html">Kurragömma</a>
+            <a href="capturetheflagg.html">Capture the Flag</a>
+            <a href="dogdeball.html">Dodgeball</a>
+            <a href="stafett.html">Stafett</a>
+            <a href="tagen.html">Tagen</a>
+            <a href="king.html">King</a>
+            <a href="hinderbana.html">Hinderbana</a>
+        </details>
+    </div>
 </nav>
 
 <section class="hero">
@@ -48,6 +46,7 @@
         <div class="hero-image">
             <img src="images/capturetheflagg.jpg" alt="Capture the Flag">
         </div>
+
         <div class="hero-text">
             <h1>Capture the Flag</h1>
             <p>Två lag tävlar om att ta motståndarens flagga utan att bli tagna.</p>
@@ -59,6 +58,7 @@
     <div class="content-grid">
         <div class="info-card">
             <h2>Spelregler</h2>
+
             <ul>
                 <li>Dela upp spelarna i två lag.</li>
                 <li>Varje lag får en egen flagga eller ett föremål.</li>
@@ -68,56 +68,49 @@
             </ul>
         </div>
     </div>
+</section>
 
- <section class="content-section">
-
+<section class="content-section">
     <h2>Bildstöd och information</h2>
 
     <div class="tabs-wrapper">
-
         <div class="tab-box">
-
             <input type="checkbox" id="toggle-rules">
 
             <label for="toggle-rules" class="tab-label">
-                <span>🖼️ Spelregler med bildstöd</span>
+                🖼️ Spelregler med bildstöd
             </label>
 
             <div class="tab-content">
                 <img src="images/capturetheflagbild.jpg" alt="Bildstöd för Capture the Flag" class="rules-image">
             </div>
-
         </div>
 
         <div class="tab-box">
-
             <input type="checkbox" id="toggle-info">
 
             <label for="toggle-info" class="tab-label">
-                <span>👨‍🏫 För vuxna</span>
+                👨‍🏫 För vuxna
             </label>
 
             <div class="tab-content">
                 <p>
-                    Capture the Flag tränar samarbete, strategi, kommunikation och kondition. Leken passar bra för större grupper och hjälper barn att planera tillsammans.
+                    Capture the Flag tränar samarbete, strategi, kommunikation och kondition.
+                    Leken passar bra för större grupper och hjälper barn att planera tillsammans.
                 </p>
             </div>
-
         </div>
-
-    </div>
-
-</section>
-
-    <div class="back-container">
-        <a href="lekar.html" class="back-btn">← Tillbaka till lekar</a>
     </div>
 </section>
+
+<div class="back-container">
+    <a href="lekar.html" class="back-btn">← Tillbaka till lekar</a>
+</div>
 
 <footer class="footer">
-    <h3>RPlayzone</h3>
+    <h3>PlayZone</h3>
     <p>Roliga lekar och rörelse för barn och unga.</p>
-    <p class="small-text">© 2026 Playzone. Alla rättigheter reserverade.</p>
+    <p class="small-text">© 2026 PlayZone. Alla rättigheter reserverade.</p>
 </footer>
 
 </body>
