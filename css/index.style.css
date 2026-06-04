@@ -355,13 +355,6 @@ nav {
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.10);
 }
 
-.parents-box h2 {
-    text-align: center;
-    margin-bottom: 1.5rem;
-    font-size: 2rem;
-    color: #166534;
-}
-
 .parents-box p {
     text-align: left;
     margin-bottom: 1rem;
@@ -377,7 +370,7 @@ nav {
 }
 
 .parents-text {
-    flex: 1;
+    width: 100%;
 }
 
 .parents-image {
@@ -390,6 +383,7 @@ nav {
 
 /* Mobil */
 @media (max-width: 767px) {
+
     .parents-image {
         order: 1;
     }
@@ -397,10 +391,18 @@ nav {
     .parents-text {
         order: 2;
     }
+
+    .parents-box h2 {
+        text-align: center;
+        margin-bottom: 1.5rem;
+        font-size: 2rem;
+        color: #166534;
+    }
 }
 
 /* iPad + Desktop */
 @media (min-width: 768px) {
+
     .parents-content {
         flex-direction: row;
         align-items: center;
@@ -417,6 +419,13 @@ nav {
         width: 40%;
         max-width: 400px;
         height: 320px;
+    }
+
+    .parents-box h2 {
+        text-align: left;
+        margin-bottom: 1.5rem;
+        font-size: 2rem;
+        color: #166534;
     }
 }
 
@@ -520,4 +529,27 @@ nav {
     .cards-grid {
         grid-template-columns: repeat(4, 1fr);
     }
+}
+
+/* till toppen */
+
+.top-container {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.top-btn {
+    display: inline-block;
+    background: #166534;
+    color: white;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 999px;
+    font-weight: 700;
+    transition: 0.2s;
+}
+
+.top-btn:hover {
+    background: #15803D;
+    transform: translateY(-2px);
 }

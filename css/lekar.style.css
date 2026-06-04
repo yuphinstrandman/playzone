@@ -499,3 +499,26 @@ nav {
         grid-template-columns: repeat(4, 1fr);
     }
 }
+
+/* till toppen */
+
+.top-container {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.top-btn {
+    display: inline-block;
+    background: #166534;
+    color: white;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 999px;
+    font-weight: 700;
+    transition: 0.2s;
+}
+
+.top-btn:hover {
+    background: #15803D;
+    transform: translateY(-2px);
+}
