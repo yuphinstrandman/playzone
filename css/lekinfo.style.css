@@ -200,6 +200,16 @@ nav {
     font-size: clamp(2rem, 4vw, 3.4rem);
     margin-bottom: 1rem;
     color: #111827;
+
+    text-align: left;
+}
+
+@media (max-width: 767px){
+
+    .hero-text h1{
+        text-align: left;
+    }
+
 }
 
 .hero-text p {
